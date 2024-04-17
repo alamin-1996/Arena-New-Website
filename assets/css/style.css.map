@@ -1,8 +1,16 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AGAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,cAAc;CAC9B",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "_variable.scss",
+        "_mixin.scss",
+        "_header.scss",
+        "_menu.scss",
+        "_hero.scss",
+        "_form.scss",
+        "_footer.scss",
+        "_responsive.scss"
     ],
     "names": [],
     "file": "style.css"
