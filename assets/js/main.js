@@ -84,7 +84,7 @@
 	////////////////////////////////////////////////////
     // 05. Module Slider Js
 
-	$('.module__slider').owlCarousel({
+	/* $('.module__slider').owlCarousel({
 		center: false,
 		items:1,
 		loop: true,
@@ -119,7 +119,7 @@
 			  items: 5
 			}
 		}
-	}); 
+	});  */
 
 })(jQuery);
 
