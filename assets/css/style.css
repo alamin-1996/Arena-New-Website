@@ -263,23 +263,8 @@ header {
   font-family: Roboto-Medium;
 }
 
-.our__services .our-services-single {
-  background-color: #ffffff;
+.signature-product-single .singnature-product-single-content {
+  background-color: #F8FAFC;
   padding: 30px;
-  border-radius: 6px;
-  min-height: 160px;
-}
-
-.our__services .our-services-single img {
-  margin-bottom: 20px;
-  height: 50px;
-}
-
-.our__services .our-services-single h3 {
-  color: #1A1A1A;
-  font-size: 20px;
-  list-style: 24px;
-  margin-bottom: 0px;
-  font-family: Roboto-Medium;
 }
 /*# sourceMappingURL=style.css.map */
