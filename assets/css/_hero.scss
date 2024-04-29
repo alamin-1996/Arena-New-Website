@@ -1,4 +1,49 @@
 .hero__section{
     background-color: #f8fafc;
     padding: 80px 0px;
+    position: relative;
+}
+.hero__left__conent{
+    h1{
+        font-family: Roboto-Bold;
+        font-size: 60px;
+    }
+    .top-box{
+        background-color: white;
+        padding: 10px 15px;
+        h4{
+            color: #FF0000;
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: 0px;
+            font-weight: 900;
+        }
+        p{
+            font-size: 12px;
+            line-height: 12px;
+            color: #212121;
+            margin-bottom: 0px;
+        }
+        img{
+            background-color: #FFEAEB;
+            padding: 5px;
+            height:40px ;
+            width: 40px;
+            border-radius: 5px;
+        }
+        
+    }
+    .btn-primary{
+        line-height: 46px;
+        padding: 0px 20px;
+    }
+}
+.hero__content__right{
+    z-index: 9;
+}
+.logo-shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }

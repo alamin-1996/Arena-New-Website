@@ -1,0 +1,42 @@
+.project__single__block{
+    background-color: #F8FAFC;
+    padding: 20px;
+    border-radius: 10px;
+    h3{
+        color: #000000;
+        font-size: 30px;
+        line-height: 36px;
+        font-family: Roboto-Bold;
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+}
+.project__statistic{
+    position: relative;
+    div{
+        position: relative;
+        &:first-child{
+            &::after{
+                content: '';
+                background-color: #1A1A1A;
+                height: 50px;
+                width: 2px;
+                position: absolute;
+                right: -25px;
+                top: 0px;
+            }
+        }
+    }
+    h4{
+        color: #1A1A1A;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: Roboto-Medium;
+        margin-bottom: 0px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}
