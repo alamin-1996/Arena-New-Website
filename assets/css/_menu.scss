@@ -447,7 +447,7 @@
     padding: 0;
     display: inline-block;
     width: 40px;
-    height: 44px;
+    height: 39px;
     line-height: 44px;
   }
   
@@ -494,15 +494,6 @@
             }
         }
     }
-}
-
-.mobile-menu{
-  .mean-bar{
-    &:last-child{
-      display: none !important;
-    }
-  }
-  
 }
 .sidebar__content{
   .mobile-content{

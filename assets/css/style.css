@@ -613,7 +613,7 @@ body {
   padding: 0;
   display: inline-block;
   width: 40px;
-  height: 44px;
+  height: 39px;
   line-height: 44px;
 }
 
@@ -655,10 +655,6 @@ body {
   padding: 12.5px;
   text-transform: capitalize;
   font-family: 'Roboto-Regular';
-}
-
-.mobile-menu .mean-bar:last-child {
-  display: none !important;
 }
 
 .sidebar__content .mobile-content p {
@@ -926,6 +922,19 @@ body {
   height: 100px;
   line-height: 100px;
   text-align: center;
+}
+
+.membership .clients-single {
+  background-color: #FCFCFC;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.membership .clients-single img {
+  margin: auto;
+  height: 80px;
 }
 
 footer {
