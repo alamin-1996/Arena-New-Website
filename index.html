@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/animate.min.css">
     <link rel="stylesheet" href="/assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <title>Arena | Home</title>
@@ -21,44 +22,86 @@
 
 <body>
 
-    <header>
+    <div id="header-sticky" class="header__area header__transparent header__padding">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./assets/img/logo.svg" alt="Logo">
-                        </a>
+            <div class="row align-items-center py-2">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-4">
+                    <div class="header__left d-flex">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="/assets/img/logo.svg" alt="logo" height="40">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <nav class="main-menu">
-                        <ul class="nav">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Service</a>
-                            </li>
-                            <li>
-                                <a href="#">Technologies</a>
-                            </li>
-                            <li>
-                                <a href="#">Products</a>
-                            </li>
-                            <li>
-                                <a href="#">About us</a>
-                            </li>
-                            <li>
-                                <a href="#">Industries</a>
-                            </li>
-                            <li>
-                                <a href="#">Case Studies</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="header__right">
+                        <div class="main-menu">
+                            <nav id="mobile-menu2">
+                                <ul class="mb-0 ps-0">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">Service</a>
+                                        <ul class="submenu">
+                                        <li><a href="#">Submenu 1</a></li>
+                                        <li><a href="#">Submenu 2</a></li>
+                                        <li><a href="#">Submenu 3</a></li>
+                                        <li><a href="#">Submenu 4</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Submenu 1</a></li>
+                                                <li><a href="#">Submenu 2</a></li>
+                                                <li><a href="#">Submenu 3</a></li>
+                                                <li><a href="#">Submenu 4</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Technologies</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="#">Products</a>
+                                        <ul class="submenu">
+                                        <li><a href="#">Submenu 1</a></li>
+                                        <li><a href="#">Submenu 2</a></li>
+                                        <li><a href="#">Submenu 3</a></li>
+                                        <li><a href="#">Submenu 4</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Submenu 1</a></li>
+                                                <li><a href="#">Submenu 2</a></li>
+                                                <li><a href="#">Submenu 3</a></li>
+                                                <li><a href="#">Submenu 4</a></li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Industries</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Case Studies</a>
+                                    </li>
+
+
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="sidebar__menu d-xl-none">
+                            <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle2">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-8 d-none d-sm-block">
                     <div class="right-menu">
                         <ul class="nav align-items-center gap-3">
                             <li>
@@ -72,7 +115,39 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- sidebar area start -->
+    <div class="sidebar__area">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__close">
+                <button class="sidebar__close-btn" id="sidebar__close-btn">
+                    <span><i class="fal fa-times"></i></span>
+                    <span>close</span>
+                </button>
+            </div>
+            <div class="sidebar__content">
+                <div class="logo mb-40">
+                    <a href="index.html">
+                        <img width="160" src="/assets/img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile-menu fix"></div>
+                <div class="clearfix"></div>
+                <div class="mobile-content mt-10">
+                    <div>
+                        <p class="mb-10">Support: <br> +01844054129, +01844054131</p>
+                        <p> Email: <br> bizpoint@arenaphonebd.com</p>
+                    </div>
+                    <div>
+                        <a href="#" class="btn">Career</a>
+                        <a href="#" class="btn btn-style-one">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar area end -->
 
     <section class="hero__section">
         <div class="container">
@@ -87,7 +162,7 @@
                         <p>
                             Upscale your business process to deliver superior customer experience and<br> revolutionize your business from top to bottom.
                         </p>
-                        <div class="d-flex  align-items-stretch gap-3 mt-60">
+                        <div class="d-flex  align-items-stretch flex-wrap gap-3 mt-60">
                             <a href="#" class="btn btn-primary pt-5">Let's work together 
                                 <i class="fa fa-light fa-arrow-right ps-3"></i>
                             </a>
@@ -125,7 +200,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="hero__content__right">
+                    <div class="hero__content__right d-none d-sm-block">
                         <img src="/assets/img/hero-1.svg" alt="Hero Banner">
                     </div>
                 </div>
@@ -143,7 +218,7 @@
             </div>
             <div class="project__single__block mb-60">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-sm-3 mb-0 ">
+                    <div class="col-lg-6 mb-sm-0 mb-20">
                         <img src="./assets/img/banner1.png" alt="">
                     </div>
                     <div class="col-lg-6">
@@ -192,7 +267,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 text-end order-1  order-md-2">
+                    <div class="col-lg-6 text-end order-1  order-md-2  mb-sm-0 mb-20">
                         <img src="./assets/img/banner2.png" alt="">
                     </div>
                     
@@ -213,56 +288,57 @@
                     Our Web Development Service is a comprehensive solution designed to meet the diverse digital needs of businesses and organizations. Our team of experts has extensive experience in all aspects of software development
                 </p>
             </div>
-            <div class="row mb-10">
-                <div class="col-lg-3 mb-30">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4  g-4 mb-10">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/1.svg" alt="">
                         <h3>Software Development</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/2.svg" alt="">
                         <h3>Apps Development</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/3.svg" alt="">
                         <h3>Website Development</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/4.svg" alt="">
                         <h3>Call Center Solution</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/5.svg" alt="">
                         <h3>Training</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/6.svg" alt="">
                         <h3>IVR</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/7.svg" alt="">
                         <h3>UX Design</h3>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-30">
+                <div class="col mb-30">
                     <div class="our-services-single">
                         <img src="/assets/img/icon/8.svg" alt="">
                         <h3>SMS Service</h3>
                     </div>
                 </div>
             </div>
+            
             <div class="d-table m-auto text-center">
                 <a href="#" class="btn btn-primary py-3 px-5">More Services  <i class="fa fa-light fa-arrow-right ps-1"></i></a>
             </div>
@@ -271,18 +347,18 @@
 
     <section class="our__signature__product section__padding">
         <div class="container">
-            <div class="title-style-one mb-25 d-flex justify-content-between align-items-center">
+            <div class="title-style-one mb-25 d-flex justify-content-between align-items-center flex-wrap flex-wrap gap-3">
                 <h3 class="text-start">Our Signature Products</h3>
                 <a href="#" class="btn btn-style-one">More Products <i class="fa fa-light fa-arrow-right ps-1"></i></a>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="signature-product-single">
-                        <img src="/assets/img/banner4.png" alt="" class="mb-25 w-100">
+                        <img src="/assets/img/banner3.png" alt="" class="w-100">
                         <div class="singnature-product-single-content">
-                            <h3>fieldforce</h3>
-                            <div class="d-flex justify-content-between align-items-center mb-20 mt-20">
-                                <div class="d-flex gap-3">
+                            <h3>Fieldforce</h3>
+                            <div class="d-flex justify-content-between align-items-center mb-20 mt-20 flex-wrap gap-3">
+                                <div class="d-flex gap-2 align-items-center">
                                     <h5>Implement Company</h5>
                                     <div class="company-logo">
                                         <img src="/assets/img/clients/smc.png" alt="">
@@ -297,9 +373,9 @@
                                 <a href="#" class="btn btn-style-one">Client Feedback <i class="fa fa-light fa-arrow-right ps-1"></i></a>
                             </div>
                             <p>Field force management software is a solution to manage and optimize the field-based operations of an organization</p>
-                            <div class="d-flex gap-4 mt-20">
+                            <div class="d-flex gap-4 mt-20 flex-wrap">
                                 <a href="#" class="btn btn-primary">Download Brochure <i class="fa fa-arrow-down-to-bracket ps-1"></i></a>
-                                <a href="#" class="btn">www.fieldforce.work <i class="fa fa-chevron-right ps-1"></i></a>
+                                <a href="#" class="btn weburl">www.richfleet.com <i class="fa fa-chevron-right ps-1"></i></a>
                             </div>
                         </div>
                         
@@ -307,40 +383,322 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="signature-product-single">
-                        <img src="/assets/img/banner4.png" alt="" class="mb-25">
-                        <h3>fieldforce</h3>
-                        <div class="d-flex justify-content-between align-items-center mb-20 mt-20">
-                            <div class="d-flex gap-3">
-                                <h5>Implement Company</h5>
-                                <div class="company-logo">
-                                    <img src="/assets/img/clients/smc.png" alt="">
+                        <img src="/assets/img/banner4.png" alt="" class="w-100">
+                        <div class="singnature-product-single-content">
+                            <h3>Richfleet</h3>
+                            <div class="d-flex justify-content-between align-items-center mb-20 mt-20 flex-wrap  gap-3">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <h5>Implement Company</h5>
+                                    <div class="company-logo">
+                                        <img src="/assets/img/clients/smc.png" alt="">
+                                    </div>
+                                    <div class="company-logo">
+                                        <img src="/assets/img/clients/bkash.png" alt="">
+                                    </div>
+                                    <div class="company-logo">
+                                        <img src="/assets/img/clients/bkash.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="company-logo">
-                                    <img src="/assets/img/clients/bkash.png" alt="">
-                                </div>
-                                <div class="company-logo">
-                                    <img src="/assets/img/clients/bkash.png" alt="">
-                                </div>
+                                <a href="#" class="btn btn-style-one">Client Feedback <i class="fa fa-light fa-arrow-right ps-1"></i></a>
                             </div>
-                            <a href="#" class="btn btn-style-one">Client Feedback <i class="fa fa-light fa-arrow-right ps-1"></i></a>
+                            <p>Field force management software is a solution to manage and optimize the field-based operations of an organization</p>
+                            <div class="d-flex gap-4 mt-20 flex-wrap">
+                                <a href="#" class="btn btn-primary">Download Brochure <i class="fa fa-arrow-down-to-bracket ps-1"></i></a>
+                                <a href="#" class="btn weburl">www.fieldforce.work <i class="fa fa-chevron-right ps-1"></i></a>
+                            </div>
                         </div>
-                        <p>Field force management software is a solution to manage and optimize the field-based operations of an organization</p>
-                        <div class="d-flex gap-4 mt-20">
-                            <a href="#" class="btn btn-primary">Download Brochure <i class="fa fa-arrow-down-to-bracket ps-1"></i></a>
-                            <a href="#" class="btn">www.fieldforce.work <i class="fa fa-chevron-right ps-1"></i></a>
-                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="technology section__padding bg-one">
+        <div class="container">
+            <div class="title-style-one mb-25">
+                <h3>Technology we used</h3>
+                <p>
+                    Entrusting the new technology to the most advanced programmers will ensure a more robust and high-performing system.
+                </p>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-5">
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/2.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/3.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/4.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/5.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/6.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/7.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/8.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/9.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="technology-single">
+                        <img src="/assets/img/logo/10.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="recent__article section__padding">
+        <div class="container">
+            <div class="title-style-one mb-25">
+                <h3>Recent Articles</h3>
+                <p>
+                    Updated with our latest software development news and events
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 row-cols-xl-3 g-4">
+                <div class="col">
+                    <div class="recent-article-single">
+                        <img src="/assets/img/banner5.png" alt="" class="w-100 mb-15">
+                        <h3 class="mb-25">Unleashing the Power of OpenAI: How Businesses</h3>
+                        <p>January 17, 2023</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right ps-1"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="recent-article-single">
+                        <img src="/assets/img/banner6.png" alt="" class="w-100 mb-15">
+                        <h3 class="mb-25">MEAN vs. MERN: Which is best for web development?</h3>
+                        <p>January 17, 2023</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right ps-1"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="recent-article-single">
+                        <img src="/assets/img/banner7.png" alt="" class="w-100 mb-15">
+                        <h3 class="mb-25">NestJS for web app development - Is it the right choice?</h3>
+                        <p>January 17, 2023</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right ps-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="technology our__clients section__padding bg-one">
+        <div class="container">
+            <div class="title-style-one mb-25">
+                <h3>A few of our clients</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-5">
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/2.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/3.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/4.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/5.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/6.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/7.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/8.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/9.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/10.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/11.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/clients/12.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="technology our__clients section__padding">
+        <div class="container">
+            <div class="title-style-one mb-25">
+                <h3>Membership</h3>
+                <p>
+                    An Iso 9001:2015 Certified Company With Basis, Bcs And Bacco Membership
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 g-5">
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/member/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/member/2.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/member/3.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="clients-single">
+                        <img src="/assets/img/member/5.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col footer-widget mb-20">
+                    <img src="/assets/img/logo-symbol.svg" alt="" class="mb-20">
+                    <p>Get Updated with us Regularly</p>
+                    <div class="footer-social mt-25 mb-45">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-phone"></i> +88-01844054109</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i> +88-01814663094</a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> bizdev@arena.com.bd</a></li>
+                    </ul>
+                </div>
+                <div class="col footer-widget mb-20">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col footer-widget mb-20">
+                    <h3>SALES FORCE</h3>
+                    <ul>
+                        <li><a href="#">Implementation</a></li>
+                        <li><a href="#">Application Development</a></li>
+                        <li><a href="#">Integration</a></li>
+                        <li><a href="#">Sales Marketing Cloud</a></li>
+                        <li><a href="#">Community Enhancement</a></li>
+                        <li><a href="#">Financial Services</a></li>
+                        <li><a href="#">Support Services</a></li>
+                    </ul>
+                </div>
+                <div class="col footer-widget mb-20">
+                    <h3>VAS</h3>
+                    <ul>
+                        <li><a href="#">MCMS</a></li>
+                        <li><a href="#">Mobile Content</a></li>
+                        <li><a href="#">Sub (SMS Subscription)</a></li>
+                        <li><a href="#">Content Development</a></li>
+                    </ul>
+                </div>
+                <div class="col footer-widget mb-20">
+                    <h3>VAS</h3>
+                    <ul>
+                        <li><a href="#">MCMS</a></li>
+                        <li><a href="#">Mobile Content</a></li>
+                        <li><a href="#">Sub (SMS Subscription)</a></li>
+                        <li><a href="#">Content Development</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright mt-30">
+            <div class="container text-center">
+                <p>© 2024 Arena Phone BD Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/jquery.meanmenu.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

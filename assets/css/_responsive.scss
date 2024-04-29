@@ -1,0 +1,58 @@
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        overflow-x: hidden;
+    }
+    .header__area{
+        padding: 0px;
+    }
+    .header__right{
+        float: inline-end;
+    }
+    .hero__section{
+        padding: 30px 0px;
+        text-align: center;
+        .hero__left__conent{
+            h1{
+                font-size: 30px;
+            }
+            .d-flex{
+                justify-content: center !important;
+            }
+            .btn-primary{
+                order: 3;
+            }
+        }
+    }
+    .logo-shape{
+        img{
+            height: 50px;
+        }
+    }
+    .title-style-one{
+        h3{
+            font-size: 25px;
+        }
+        p{
+            width: 100%;
+        }
+    }
+    .row-cols-mobile-gutter-0{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .footer-social{
+        justify-content: center;
+    }
+    .our__clients .clients-single{
+        margin: auto;
+    }
+    .footer-widget{
+        text-align: center;
+        h3{
+            text-align: center !important;
+        }
+    }
+}

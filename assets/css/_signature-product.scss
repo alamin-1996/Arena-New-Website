@@ -2,5 +2,38 @@
     .singnature-product-single-content{
         background-color: #F8FAFC;
         padding: 30px;
+        h3{
+            color: #000000;
+            font-size: 28px;
+            line-height: 33px;
+            font-family: Roboto-Medium;
+            margin-bottom: 0;
+        }
+        h5{
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: Roboto-Medium;
+            margin-bottom: 0;
+        }
+        .company-logo{
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn-primary{ 
+            i{
+                font-weight: 300;
+            }
+        }
+        .weburl{
+            font-family: Roboto-Medium;
+            i{
+                font-size: 12px;
+            }
+        }
     }
 }

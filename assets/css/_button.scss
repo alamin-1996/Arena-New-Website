@@ -14,12 +14,22 @@
     }
 }
 .btn-style-one{
-    background-color: white;
+    background-color: transparent;
     padding: 10px 15px;
     border: 1px solid #E0E0E0;
     border-radius: 6px;
     font-size: 17px;
     line-height: 17px;
+    font-family: Roboto-Medium;
+    transition:.3s;
+    i{
+        font-weight: 500;
+    }
+    &:hover{
+        background-color: $red;
+        color: white;
+        transition:.3s;
+    }
 }
 .btn-style-two{
     background-color: white;

@@ -1,0 +1,21 @@
+.recent__article{
+    .recent-article-single{
+        h3{
+            color: #000000;
+            font-size: 25px;
+            font-family: Roboto-Black;
+            line-height: 36px;
+        }
+        p{
+            color:#8E989D;
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+        a{
+            color: $red;
+            font-size: 15px;
+            font-family: Roboto-Medium;
+        }
+    }
+}
